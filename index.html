@@ -21,7 +21,7 @@
             let db = new window.SQL.Database(new Uint8Array(response.data));
             // 执行查询
             let s = new Date().getTime();
-            let r = db.exec("select * from unified_sources;");
+            let r = db.exec("select * from telephones;");
             let e = new Date().getTime();
             console.info("查询数据耗时：" + (e - s) + "ms");
             // 解析数据
